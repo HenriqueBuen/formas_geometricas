@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retangulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Retângulo</h1>
+        <p>Calcule o Retângulo</p>
+    </header>
+
+
+    <main class="circle">
+        <p class="paragraphC">Semelhante ao quadrado mais com lados diferentes. Área(A)  Base(b) Altura(h)
+            <br>A = b * h
+        </p>
+    </main>
+   
+    <div class="calc">
+
+        <label for="b">Informe a Base</label>
+    <input id="base" type="number"> 
+
+        <label for="h">Informe a Altura</label>
+
+    <input id="altura" type="number"> 
+
+    <button onclick="somar()">Calcular a Área</button>
+
+    O Resultado é: <span></span>
+
+</div>
+
+    <script>
+        
+
+
+        function somar() {
+            var base = document.querySelector('#base');
+            var altura = document.querySelector('#altura');
+            var resultado = document.querySelector('span');
+            resultado.innerHTML = parseFloat(base.value) * parseFloat(altura.value);
+        }
+    </script>
+
+    
+</body>
+</html>

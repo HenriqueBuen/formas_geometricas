@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setor Circular em um Círculo Alinhado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Setor Circular em um Círculo Alinhado</h1>
+        <p>Calcule o Setor Circular em um Círculo Alinhado</p>
+    </header>
+
+
+    <main class="circle">
+        <p class="paragraphC">"Setor circular é uma região do círculo delimitada por dois raios do círculo e um arco da circunferência. O setor circular é como se fosse uma fatia da circunferência."
+
+            <br> A = θ . π . r² / 360</p>
+    </main>
+
+<div class="calc">
+        <label for="a">Ângulo</label>
+    <input id="angulo" type="number"> 
+
+        <label for="r">Raio</label>
+    <input id="raio" type="number"> 
+
+    <button onclick="somar()">Calcular</button>
+
+
+
+    O Resultado é: <span></span>
+
+</div>
+
+    <script>
+       
+
+        function somar() {
+
+            var angulo = document.querySelector('#angulo').value
+            var raio = document.querySelector('#raio').value
+            var resultado = document.querySelector('span')
+            
+            resultado.innerHTML = parseFloat(angulo) * Math.PI * parseFloat(Math.pow(raio, 2)) / 360
+        }
+    </script>
+    
+</body>
+</html>

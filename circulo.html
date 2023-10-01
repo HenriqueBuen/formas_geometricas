@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Círculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Círculo</h1>
+        <p>Calcule o Círculo</p>
+    </header>
+
+    <div class="calc">
+
+    <main class="circle">
+        <p class="paragraphC">A área de um círculo é pi vezes o raio elevado ao quadrado (A = π r²). Aprende a usar esta fórmula para calculares a área de um círculo, quando indicarem a medida do diâmetro.</p>
+    </main>
+         
+        <label for="raio">  Raio</label>
+        <input id="R" type="number"> 
+
+        <button onclick="calcularArea()">Calcular Área</button>
+
+        O resultado é:<span></span>
+
+    </div>
+        <script>
+           
+
+
+            function calcularArea () {
+                var R = document.querySelector('#R');
+                var resultado = document.querySelector('span');
+
+
+                resultado.innerHTML = parseFloat (R.value) ** 2 * Math.PI 
+            }
+        </script>
+
+       
+
+    </body>
+   
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coroa do Círculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Coroa do Círculo</h1>
+        <p>Calcule a Coroa do Círculo</p>
+    </header>
+
+
+    <main class="circle">
+        <p class="paragraphC">Quando duas os mais circunferências possuem o mesmo centro, são demoninadas concêntricas. Nesse caso elas podem ter raio de tamanho diferente
+            <br>A coroa circular = π (R maior² - r menor²)
+        </p>
+    </main>
+
+
+    <div class="calc">
+
+
+        <label for="rmaior">Raio Maior</label>
+   <input id="raioMaior" type="number"/> 
+
+        <label for="rmenor">Raio Menor</label>
+
+   <input id="raioMenor" type="number"/> 
+
+   <button onclick="somar()">Calcular</button>
+
+
+   O Resultado é <span></span>
+
+</div>
+
+   <script>
+       
+
+
+        function somar() {
+
+            var raioMaior = document.querySelector('#raioMaior').value
+            var raioMenor = document.querySelector('#raioMenor').value
+            var resultado = document.querySelector('span')
+
+            resultado.innerHTML = Math.PI * (Math.pow(raioMaior, 2) - Math.pow(raioMenor, 2))
+        }
+   </script>
+    
+</body>
+</html>

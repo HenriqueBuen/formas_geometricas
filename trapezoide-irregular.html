@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trapézio Irregular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trapezóide Irregular</h1>
+        <p>Calcule o Trapezóide Irregular</p>
+    </header>
+
+
+    <main class="circle">
+        <p class="paragraphC"> Onde os quatro lados têm diferentes comprimentos. Teremos que aplicar fórmulas de geometria mais avançadas para chegar à área correta.
+        <br>A = (B + b) * h / 2</p>
+    </main>
+
+    <div class="calc">
+
+        <label for="bMaior">Base Maior</label>
+    <input id="baseMaior" type="number"> 
+
+        <label for="bMenor">Base Menor</label>
+    <input id="baseMenor" type="number"> 
+
+        <label for="h">Altura</label>
+    <input id="altura" type="number"> 
+
+    <button onclick="somar()">Calcular </button>
+
+    O resultado é: <span></span>
+
+    </div>
+
+
+
+    <script>
+        
+
+        function somar() {
+
+
+            var baseMaior = document.querySelector('#baseMaior').value
+
+            var baseMenor = document.querySelector('#baseMenor').value
+
+            var altura = document.querySelector('#altura').value
+
+            var resultado = document.querySelector('span')
+            
+           resultado.innerHTML =  parseFloat(baseMaior) + parseFloat(baseMenor) * parseFloat(altura) / 2
+        }
+    </script>
+
+    
+</body>
+</html>

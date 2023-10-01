@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quadrado</h1>
+        <p>Calcule o Quadrado</p>
+    </header>
+
+
+    <main class="circle">
+        <p class="paragraphC">Um quadrado é uma figura bidimensional que possui quatro lados iguais e quatro ângulos retos. A fórmula para calcular a área do quadrado é:
+            <br>lado * lado
+        </p>
+    </main> 
+
+    <div class="calc">
+
+        <label for="l">Informe o Lado</label>
+
+    <input id="lado" type="number"> 
+
+    <button onclick="somar()">Calcular</button>
+
+    O resultaddo é: <span></span>
+</div>
+    <script>
+       
+
+        function somar() {
+            var lado = document.querySelector('#lado').value
+
+            var resultado = document.querySelector('span')
+
+            resultado.innerHTML = parseFloat( Math.pow (lado, 2) )
+            
+        }
+
+    </script>
+
+    
+</body>
+</html>

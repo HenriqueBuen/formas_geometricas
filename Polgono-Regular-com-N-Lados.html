@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polígono Regular com N Lados </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Polígono Regular com N Lados</h1>
+        <p>Calcule o Polígono Regular com N Lados</p>
+    </header>
+    
+    <main class="circle">
+        <p class="paragraphC">A fórmula para calcular a área de um polígono regular com n lados depende do tipo de polígono e das informações disponíveis sobre ele. No entanto, em geral, você pode calcular a área de um polígono regular usando a seguinte fórmula:
+
+            <br> Área = P . a / 2</p>
+    </main>
+        <div class="calc">
+
+    <label for="sp">Escolha o número de lados</label>
+        <input id="semiperimetro" type="number">
+
+    <label for="a">Apótema</label>
+        <input id="apotema" type="number">
+
+        <button onclick="somar()">Calcular</button>
+
+        O resultado é: <span></span>
+
+    </div>
+
+        <script>
+            function somar() {
+
+                let semiperimetro = document.querySelector('#semiperimetro').value
+                let apotema = document.querySelector('#apotema').value
+                let resultado = document.querySelector('span')
+
+
+                resultado.innerHTML = semiperimetro * apotema / 2
+
+            }
+
+        </script>
+        
+
+</body>
+</html>
